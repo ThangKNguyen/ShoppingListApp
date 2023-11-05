@@ -57,7 +57,7 @@ const pushValuetoPage = (input) => { // append the list to the ul
     listItem.textContent = itemValue
     shoppingList.append(listItem)
 
-    listItem.addEventListener("dblclick", function(){
+    listItem.addEventListener("click", function(){
         // find the exact location of that item by its key, inside of shoppingList
         let exactLocationOfShopIteminDB = ref(database, `shoppingList/${itemkey}`) 
             
